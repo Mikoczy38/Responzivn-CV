@@ -1,0 +1,46 @@
+ul {
+  background-color: rgb(9, 61, 61);
+  list-style-type: none;
+  color: aliceblue;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+li {
+  height: 50px;
+  text-align: center;
+  padding-top: 15px;
+  box-sizing: border-box;
+}
+
+li:hover {
+  background-color: rgb (8 38 38);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  li {
+    display: inline-block;
+    width: calc(24% - 4px);
+  }
+}
+
+img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+}
+.chameleon {
+  background-color: red;
+  height: 300px;
+  background-image: url(images/john_doe.jpg);
+  background-size: contain;
+  background-repeat: repeat-y;
+  background: url(images/john_doe.jpg) no-repeat center;
+}
+/* Vlastnost background: url() se moc nepoužívá. */
